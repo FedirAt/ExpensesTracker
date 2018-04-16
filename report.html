@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Expences Report</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+
+  <h2>Operations For</h2>
+  <div class="container flex">
+      <input type="month" id="reportMonth" class="btn">
+      <button type="button" id="showReport" class="btn btn-secondary">Show report</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr class="table-dark">
+        <td>#</td>
+        <td>ITEM</td>
+        <td>SUM</td>
+        <td>DATE</td>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    <tfoot>
+      <tr class="table-dark total">
+        <td colspan="2">TOTAL</td>
+        <td id="totSum"></td>
+        <td colspan="2"></td>
+      </tr>
+    </tfoot>
+  </table>
+
+<button type="button" id="buttonClear" class="btn btn-warning disabled">Clear All Operations</button>
+<a href="index.html">Home</a>
+  </div>
+
+  <script type="text/javascript" src="report.js"></script>
+</body>
+</html>

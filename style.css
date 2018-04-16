@@ -1,0 +1,98 @@
+.main {
+  border: 1px solid white;
+  margin: 5% 20%;
+  border-radius: 2%;
+  height: auto;
+  padding: 1%;
+}
+h2, h3{
+  text-align: center;
+}
+
+/*TABLE STYLES  */
+table {
+  margin: 5% auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+thead td {
+  font-weight: 600;
+  width: 10%;
+}
+tfoot {
+  font-weight: 600;
+}
+td {
+  border: 1px solid white;
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+}
+.table-dark td {
+  border: 1px solid white;
+}
+.total {
+  display: none;
+}
+
+/*FORM STYLE AND INPUTS STYLE*/
+.form {
+  display: grid;
+  margin: 0 20%;
+}
+.flex {
+  flex-wrap: wrap;
+}
+label {
+  display: inline-block;
+  width: 25%;
+  font-size: 1.2em;
+}
+#itemName, #itemSum, #itemDate {
+  margin: 2%;
+  width: 50%;
+  display: inline-block;
+}
+#buttonReport, #buttonClear {
+  display: block;
+  margin: 2% auto;
+}
+#buttonAdd, #clearFields {
+  margin: auto 5%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+#reportDate, #changeDate, #showReport, #reportMonth {
+  margin: 2%;
+}
+#reportDate, #reportMonth {
+  border: none;
+}
+/*HYPERLINKS STYLE  */
+a {
+  display: block;
+  text-align: center;
+  margin: 1%;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+.delete {
+  color: #DAA520;
+  width: 50%;
+  margin: auto;
+}
+.about{
+  margin: 10% 20%;
+   text-indent: 1.5em;
+   line-height: 1.5em;
+   letter-spacing: 0.2em
+  }
+  article {
+    margin-bottom: 5%;
+  }

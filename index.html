@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Expenses Tracker</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+<h2>Operations For</h2>
+<div class="container">
+  <input type="date" id="reportDate" class="btn">
+  <button type="button" id="changeDate" class="btn btn-secondary">Search</button>
+</div>
+
+<table>
+  <thead>
+    <tr class="table-dark">
+      <td>#</td>
+      <td>ITEM</td>
+      <td>SUM</td>
+      <td>DATE</td>
+      <td>REMOVE</td>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+  <tfoot>
+    <tr class="table-dark total">
+      <td colspan="2">TOTAL</td>
+      <td id="totSum"></td>
+      <td colspan="2"></td>
+    </tr>
+  </tfoot>
+</table>
+
+    <h3>Add new operation</h3>
+  <div class="form">
+    <form>
+      <div class="inputs">
+        <label>Item</label>
+        <input list="items" placeholder="Item" id="itemName" >
+        <datalist id="items">
+        </datalist>
+
+      </div>
+      <div class="inputs">
+        <label>Sum</label>
+        <input type="number" id="itemSum" step="0.01" placeholder="0.00" min="0">
+      </div>
+      <div class="inputs">
+        <label>Date</label>
+        <input type="date" id="itemDate">
+      </div>
+      <div class="container">
+        <button type="button" id="buttonAdd" class="btn btn-secondary">Add</button>
+        <button type="button" id="clearFields" class="btn btn-secondary">Clear</button>
+      </div>
+
+    </form>
+  </div>
+
+
+<button type="button" id="buttonReport" class="btn btn-secondary" onclick="window.location.href='report.html'">View Report</button>
+<button type="button" id="buttonClear" class="btn btn-warning disabled">Clear All Operations</button>
+<a href="about.html">About</a>
+</div>
+
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
