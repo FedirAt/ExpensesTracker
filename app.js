@@ -1,5 +1,5 @@
 "use strict";
-//Track your expences by adding daily expences to local storage and watch history of previous operations by choosed day
+//Track your expenses by adding daily expences to local storage and watch history of previous operations by choosed day
 
 //VARIABLES
 const addBtn = document.getElementById("buttonAdd");
@@ -60,6 +60,7 @@ function makeTable(day) {
 //clear table function:
 function clearTable() {
   document.querySelector("tbody").innerHTML = "";
+  addTotalRow();
 }
 
 //add operation to the table function:
@@ -80,6 +81,9 @@ function addOperToTable(item, sum, date) {
 //Add TOTAL row:
 function addTotalRow() {
   let ls = JSON.parse(localStorage.getItem("operations"));
+  if (ls === null) {
+    ls = [];
+  }
   let totRows = document.getElementsByTagName("tr");
   let changedDate = document.getElementById("reportDate").value;
   //show total row
@@ -213,6 +217,7 @@ clearBtn.addEventListener("click", function () {
     //update table
     clearTable();
     makeTable(document.getElementById("reportDate").value);
+    addTotalRow();
     e.preventDefault();
    }
   });
